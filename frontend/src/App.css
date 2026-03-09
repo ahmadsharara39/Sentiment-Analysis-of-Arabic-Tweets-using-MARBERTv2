@@ -1,0 +1,221 @@
+/* Reset default margin and padding for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e; /* Dark background */
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; /* Added some padding */
+}
+
+/* Container for the app to keep it centered */
+.App {
+  max-width: 900px; /* Limit max width */
+  width: 100%;
+  padding: 2rem;
+  background-color: #2b2b2b; /* Slightly lighter background for the container */
+  border-radius: 12px; /* Round the corners for a smoother look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Label Mapping Text Styling */
+label {
+  color: #ff4081;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Styling for links */
+a {
+  text-decoration: none;
+  color: #ff4081; /* Pinkish color for links */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff80ab; /* Lighter pink on hover */
+}
+
+/* Styling for buttons */
+button {
+  background-color: #42a5f5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  width: 100%; /* Make the button full-width */
+}
+
+button:hover {
+  background-color: #6d4bff; /* Lighter color on hover */
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Textarea styling for tweet input */
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 1rem;
+  resize: none;
+  background-color: #333;
+  color: white;
+}
+
+textarea:focus {
+  border-color: #42a5f5;
+  outline: none;
+}
+
+/* Select dropdown styling for model selection */
+select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #333;
+  color: white;
+  margin-top: 1rem;
+  transition: border-color 0.3s ease;
+  width: 100%; /* Make it full-width */
+}
+
+select:focus {
+  border-color: #42a5f5;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table, th, td {
+  border: 1px solid #444;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+table thead {
+  background-color: #42a5f5;  /* Light blue for header */
+  color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #4b4b4b;  /* Darker gray for even rows */
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #333;  /* Dark gray for odd rows */
+}
+
+table tbody tr:hover {
+  background-color: #5c5c5c; /* Light hover effect for rows */
+}
+
+/* Chart Containers */
+.chart-container {
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+/* Responsiveness for mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .App {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    margin: 0.5rem;
+    max-width: 100%;
+  }
+
+  .metrics-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
